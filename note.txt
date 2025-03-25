@@ -1,0 +1,222 @@
+
+Features of Javascript
+-----------------------
+. scripting language
+. it is used to provide behaivour to a web application
+. it is used in both frontend as well as backend
+    . initially js was introduced as frontend language
+    . v8 engine is used to run js in browser
+    . node js environment developed- this provide run environment for js outside the browser, coz it has v8 engine.
+
+    . frontend - behaivoural
+    . backend - logical operations
+
+. it is categorised as dynamically typed language.
+    - dynamically typed means the datatypes changes according to the assigned value.    
+. single thread programming language
+    - line by line execution at a time.
+. supports both procedural and object-oriented (oops) programming paradigm (paradigm- style of programming)
+
+------------procedural programming --------------------
+
+js file -- filename.js
+
+display
+-------
+console.log(content);
+
+DATA TYPES
+------------
+- there are 2 types of data types in js
+    1. Primitive datatype :- 
+                - Base datatype
+                - they are immutable --> cannot change the original value, but reassigning is possible.
+                    1) string :- sequence of characters
+                                    eg: "text", 'text'
+                    2) number :- represents integer and floating point numbers
+                                    eg: 25 , 25.0
+                    3) BigInt :- represents larger numbers outside the boundary of number category
+                                    eg: 2^56
+                    4) Null :- intentional absence of value
+                                    eg: let x= null
+                    5) undefined :- not assigned a value
+                                    eg: let x
+                    6) Boolean :- logical value -true or false
+                    7) symbol :- used to uniquely identify a content. used to create in libraries.
+                                eg: 
+
+    2. Non Primitive datatype:-
+                - Derived datatype
+                - Mutable --> can change the original value, can reassign new value.
+                    8) Object :- data is stored in key:value pairs
+                            - eg: array, object , functions etc...
+                            - combination of primitive datatype.
+
+Variables
+----------
+- used to store data
+- indentifiers - rules to create variables
+    -variable name can have alphabets, numbers, underscore etc..
+    - variable name  should not start with digit/numbers, but subsequent characters can be digits.
+    - if the variable names contains more than one word , the words should not have space.
+        - camel-case: variableName
+        - snakecase: variable_name
+    - variable names are case sensitive.
+        eg: car, CAR, Car, caR --> all are different variable names.
+
+    Syntax
+    -----------
+    variableName = value
+
+    --> to know the datatype of the value use typeof() function
+
+    KEYWORD  - set of reserved words.
+             - it gives special meaning to the variables.
+             1) var -> new value can be reassigned, redeclaration is allowed, global scope
+
+             2) const -> reassigning is not possible, redeclaration is not allowed, global scope
+
+             3) let -> reassigning is possible, redeclaration not allowed, block level scoope
+
+
+        Hoisting
+        ---------
+        - Using a variable before it is declared.
+
+        Template Literals
+        ------------------
+        - its a way of displaying contents.
+
+        Syntax
+        ------
+        console.log('content ${variable}')
+
+        Concatenation
+        ---------------
+        - adding uo pf data
+          - string + string -> string
+          - string + number -> string
+          - number + number -> number
+
+        Operators
+        ---------
+
+        1) Assignment operator (=)
+        2) Arithematic operators --> +, -, *, /, %(gives remainder), **(exponential- power)
+
+        3) Relational Operators
+            >, >=, < , <=, ==, ===
+            - returns boolean value
+
+        4) Logical Operators
+                --> between one or more relational operators
+                --> returns boolean values
+
+            a) AND (&&)
+                        T && T = T
+                        T && F = F
+                        F && T = F
+                        F && F = F
+
+            b) OR (||)
+
+                        T || T = T
+                        T || F = T
+                        F || T = T
+                        F || F = F
+
+            c) NOT (!)
+
+                    !T = F
+                    !F = T
+        
+        5) Increment (++) Decrement(--) Operators
+
+            x ++                       x --
+            x = x+1                    x = x-1
+        
+        6) Short hand operators -> same variable to the left and right.
+             x= x+1
+             x += 1
+
+        7) Ternary Operators
+            Syntax
+            ------
+                condition ? true statement : False statement
+
+            example
+            --------
+            
+            console.log(age>=18 ? 'Eligible to vote' : 'Not eligible');
+
+            num=21
+            console.log(num>0? 'Positive number' : num==0? 'Neither +ve nor negative': 'Negative number');
+
+        8) Truthy Operator
+           ---------------
+
+           Syntax
+           ------
+
+           condition && true statement
+    
+    Conditional Statements / Decision making Statements
+
+       - execute based on the condition
+
+        1) if - else statements
+           ----------------------
+
+                Syntax
+                ------
+                if (condition){
+                    statements
+                }
+                else if {
+                    statement
+                }
+                else {
+                    statement
+                }
+                
+                - at a time any one case execute
+        
+        2)  LOOPING Statements
+            -------------------
+
+            - Used to execute a set of code repeatedly at a particular part of  a program file.
+
+            - to exit a loop the condition must be false
+
+            a) while
+               ------
+                    Syntax
+                    ------
+                    
+                    variable initialization
+                    while(condition){
+                        statements....
+
+                        exit condition / increment or decrement statments 
+                    }
+
+
+            b) for
+              -----
+
+
+concept
+--------
+
+positive - number should be greater than 0
+negative - number should be less than zero
+zero - neither positive nor negative
+
+even - number divided by 2 gives a remainder as zero (includign 0)
+
+odd - number divided by 2 doesnot gives a remiander as zero.
+
+divisibility - if a is divisible by b means --> a divided by b gives remainder zero.
+
+Math.floor() --> to remove decimal points
+
